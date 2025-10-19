@@ -10,5 +10,3 @@ def char_count(s):
     count[char] += 1
   
   return count
-
-print(char_count('catss'))
