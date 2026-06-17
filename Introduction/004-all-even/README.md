@@ -46,3 +46,9 @@ all_even([1, 2, 4, 6, 8]) # -> False
 ```python
 all_even([42, 18, 96, 4, 70, 12, 58, 30, 84, 26]) # -> True
 ```
+
+#### test_07:
+
+```python
+all_even([-5, -3, -4]) # -> False
+```
