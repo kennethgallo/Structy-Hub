@@ -7,6 +7,8 @@ def counter(s):
   for char in s:
     if char not in count:
       count[char] = 0
-    count[char] += 1
 
+    count[char] += 1
   return count
+
+print(counter('fluster'))
