@@ -1,16 +1,19 @@
 def all_unique(items):
 
-  counter = {}
+  return len(items(set)) == len(items)
 
-  for item in items:
-    if item not in counter:
-      counter[item] = 0
-    counter[item] += 1
+  """full algorithm"""
+  # counter = {}
 
-  for key, value in counter.items():
-    if value > 1:
-      return False
-    return True
+  # for item in items:
+  #   if item not in counter:
+  #     counter[item] = 0
+  #   counter[item] += 1
+
+  # for key, value in counter.items():
+  #   if value > 1:
+  #     return False
+  # return True
 
   #print(counter)
 
