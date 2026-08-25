@@ -1,3 +1,9 @@
 def all_unique(items):
 
-  return len(unique) == len(items)
+  unique = set(items)
+
+  for item in items:
+    if item not in unique:
+      return False
+  else:
+    return True
