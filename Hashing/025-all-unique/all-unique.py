@@ -1,9 +1,21 @@
 def all_unique(items):
 
-  unique = set(items)
+  counter = {}
 
   for item in items:
-    if item not in unique:
+    if item not in counter:
+      counter[item] = 0
+    counter[item] += 1
+
+  for key, value in counter.items():
+    if value > 1:
       return False
-  else:
     return True
+
+  #print(counter)
+
+  
+    
+    
+
+
