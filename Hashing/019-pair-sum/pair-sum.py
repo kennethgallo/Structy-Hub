@@ -1,12 +1,11 @@
 def pair_sum(numbers, target_sum):
 
-  previous = {}
+  previous_nums = {}
 
   for index, num in enumerate(numbers):
     complement = target_sum - num
-    if complement in previous:
-      return(previous[complement], index)
-    previous[num] = index
 
+    if complement in previous_nums:
+      return (previous_nums[complement], index)
 
-print(pair_sum([3, 2, 5, 4, 1], 8)) # -> (0, 2)
+    previous_nums[num] = index
