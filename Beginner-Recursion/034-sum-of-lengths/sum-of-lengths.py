@@ -7,4 +7,4 @@ def sum_of_lengths(strings):
   # time complexity -> input of n. Copying sub list and running n operations
   # resulting in O(n^2) time
 
-  # space complexity -> input of n. copying each sliced sub list requires n space 
+  # space complexity -> input of n. copying each sliced sub list requires new list resulting in O(n^2) space
